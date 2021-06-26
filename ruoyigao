@@ -1,0 +1,15 @@
+cacheSolve<-function(x){
+  inverse<-NA
+  makeCacheMatrix<-function(){
+    inverse<-matrix(na ,nrow(x),ncol(x))
+  }
+  if(is.na(inverse))
+  {
+    inverse<-solve(x)
+  }
+  else
+  {
+    break
+  }
+  inverse
+}
